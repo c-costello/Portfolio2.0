@@ -4,8 +4,44 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Portfolio2</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
 </head>
 <body>
-    
+    <header>
+        <div id="title">
+            <h1> Clarice Costello </h1>
+            <h3> C# & ASP.net || Javascript </h3>
+        </div>
+        <div id="nav-container">
+            <nav id="nav-body">
+                <ul id="nav-list">
+                    <li><a href="#about">About</a> </li>
+                    <li><a href="#technologies">Languages and Technologies</a> </li>
+                    <li><a href="#projects">Projects</a> </li>
+                    <li><a href="#background">Background and Education</a> </li>
+                    <li><a href="~/Pages/Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="contact-nav contact-top">
+                <a href="https://github.com/c-costello" target="_blank"><i class="fab fa-github-square"></i></a>
+                <a href="https://www.linkedin.com/in/clarice-costello/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:claricostello@outlook.com" target="_blank"><i class="fas fa-envelope-open-text"></i></a>
+        </div>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+        <div id="footer-nav-container">
+            <ul id="footer-list">
+                <li><a href="https://github.com/c-costello" target="_blank">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/clarice-costello/" target="_blank">LinkedIn</a></li>
+                <li><a href="mailto:claricostello@outlook.com" target="_blank">Email</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
