@@ -5,12 +5,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace Portfolio2.Pages
+namespace Portfolio2.Pages.Projects
 {
-    public class PrivacyModel : PageModel
+    public class Project1Model : PageModel
     {
         public void OnGet()
         {
+
         }
     }
 }
