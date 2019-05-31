@@ -4,3 +4,18 @@ main {
     padding-right: 5vw;
     padding-bottom: 5vw;
 }
+
+.spacer {
+    height: 75px;
+    outline: 1px solid red;
+}
+
+.proj-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.img-cont {
+    display: flex;
+    justify-content: center;
+}
