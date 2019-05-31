@@ -7,7 +7,6 @@ main {
 
 .spacer {
     height: 75px;
-    outline: 1px solid red;
 }
 
 .proj-container{
@@ -19,3 +18,8 @@ main {
     display: flex;
     justify-content: center;
 }
+
+h3{
+    margin-bottom: 10px;
+}
+
