@@ -6,36 +6,55 @@
     <title>@ViewData["Title"] - Portfolio2</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css" integrity="sha256-ujE/ZUB6CMZmyJSgQjXGCF4sRRneOimQplBVLu8OU5w=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="~/css/site.css" />
 
 
 </head>
 <body>
     <header>
         <div id="title">
-            <h1> Clarice Costello </h1>
-            <h3> C# & ASP.net || Javascript </h3>
         </div>
         <div id="nav-container">
-            <nav id="nav-body">
-                <ul id="nav-list">
-                    <li><a href="~/#about">About</a> </li>
-                    <li><a href="~/#technologies">Languages and Technologies</a> </li>
-                    <li><a href="~/#projects">Projects</a> </li>
-                    <li><a href="~/#background">Background and Education</a> </li>
-                    <li><a href="~/Contact">Contact</a></li>
-                </ul>
+            <nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <h1 class="title is-2 has-text-light">Clarice Costello</h1>
+
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="~/"> Home</a>
+                        <a class="navbar-item" href="~/#about">About</a>
+                        <a class="navbar-item" href="~/#technologies">Languages and Technologies</a>
+                        <a class="navbar-item" href="~/#projects">Projects</a>
+                        <a class="navbar-item" href="~/#background">Background and Education</a>
+                        <a class="navbar-item" href="~/Contact">Contact</a>
+
+
+
+                    </div>
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="icons">
+                                <a href="https://github.com/c-costello" target="_blank"><i class="fab fa-github-square"></i></a>
+                                <a href="https://www.linkedin.com/in/clarice-costello/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="mailto:claricostello@outlook.com" target="_blank"><i class="fas fa-envelope-open-text"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </div>
-        <div class="contact-nav contact-top">
-            <a href="https://github.com/c-costello" target="_blank"><i class="fab fa-github-square"></i></a>
-            <a href="https://www.linkedin.com/in/clarice-costello/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:claricostello@outlook.com" target="_blank"><i class="fas fa-envelope-open-text"></i></a>
-        </div>
     </header>
-    <main>
+    <main id="about">
         @RenderBody()
     </main>
-    <footer>
+    <footer class="footer">
         <div id="footer-nav-container">
             <ul id="footer-list">
                 <li><a href="https://github.com/c-costello" target="_blank">Github</a></li>
@@ -47,6 +66,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"></script>
+
+    <script src="~/js/Nav.js"></script>
     <script src="~/js/site.js"></script>
     <script src="~/js/modul.js"></script>
 </body>
